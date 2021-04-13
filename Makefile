@@ -25,4 +25,6 @@ run:
             -e LOCAL_IP_ADDRESS=$(LOCAL_IP_ADDRESS) \
             oled
 
+stop:
+	-docker rm -f oled || :
 
